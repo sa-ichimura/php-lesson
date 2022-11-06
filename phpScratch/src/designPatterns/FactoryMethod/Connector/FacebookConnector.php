@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Connector;
 
 class FacebookConnector implements SocialNetworkConnector {

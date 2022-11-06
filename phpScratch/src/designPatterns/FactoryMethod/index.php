@@ -1,6 +1,8 @@
 <?php
+
 namespace App;
-use App\Factory\{LinkedInPoster, FacebookPoster, SocialNetworkPoster};
+
+use App\Factory\{FacebookPoster, LinkedInPoster, SocialNetworkPoster};
 
 function clientCode(SocialNetworkPoster $creator)
 {

@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Factory;
+
 use App\Connector\SocialNetworkConnector;
 
 class FacebookPoster extends SocialNetworkPoster {

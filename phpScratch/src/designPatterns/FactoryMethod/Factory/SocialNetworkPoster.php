@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Factory;
 
 abstract class SocialNetworkPoster {

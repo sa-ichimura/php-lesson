@@ -1,6 +1,6 @@
 <?php
-namespace App\Connector;
 
+namespace App\Connector;
 
 class LinkedInConnector implements SocialNetworkConnector {
     private string $email;
