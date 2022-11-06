@@ -6,16 +6,20 @@ services:
       - 8080:80
     volumes:
       - ./Docker/nginx/:/etc/nginx/conf.d/
-      - ./src:/var/www/html
+      - ./src:/var/www/app
     depends_on:
       - php
   php:
     build: ./Docker/php
     volumes:
-      - ./src:/var/www/
+      - ./src:/var/www/app
     depends_on:
       - db
-
+    working_dir: /var/www/app
+  cs:
+    image: herloct/php-cs-fixer
+    volumes:
+      - ./src:/var/www/app
   db:
     image: mysql:5.7
     ports:
