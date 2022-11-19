@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\FactoryMethod\Connector;
 
 final class FacebookConnector implements SocialNetworkConnector {
