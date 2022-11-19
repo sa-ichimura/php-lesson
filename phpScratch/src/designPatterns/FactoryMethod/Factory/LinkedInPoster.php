@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Factory;
+namespace App\FactoryMethod\Factory;
 
-use App\Connector\LinkedInConnector;
-use App\Connector\SocialNetworkConnector;
+use App\FactoryMethod\Connector\LinkedInConnector;
+use App\FactoryMethod\Connector\SocialNetworkConnector;
 
 class LinkedInPoster extends SocialNetworkPoster
 {

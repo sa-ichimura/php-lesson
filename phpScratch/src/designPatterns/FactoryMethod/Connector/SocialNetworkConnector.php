@@ -1,6 +1,5 @@
 <?php
-
-namespace App\Connector;
+namespace App\FactoryMethod\Connector;
 
 interface SocialNetworkConnector{
     public function logIn():void;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 $finder = PhpCsFixer\Finder::create()
     ->in([
-        __DIR__ . '/designPatterns',
+        __DIR__ . '/DesignPatterns',
     ]);
 
 $config = new PhpCsFixer\Config();
@@ -15,7 +15,7 @@ return $config
         '@PhpCsFixer:risky' => true,
         'blank_line_after_opening_tag' => true,
         'linebreak_after_opening_tag' => true,
-        'declare_strict_types' => false,
+        'declare_strict_types' => true,
         'no_superfluous_phpdoc_tags' => false,
         'global_namespace_import' => [
             'import_classes' => true,
@@ -33,7 +33,7 @@ return $config
         'no_unused_imports' => true,
         'phpdoc_types_order' => [
             'null_adjustment' => 'always_last',
-            'sort_algorithm' => 'none',
+            'sort_algorithm' => 'alpha',
         ],
         'php_unit_test_case_static_method_calls' => [
             'call_type' => 'this'
@@ -43,10 +43,10 @@ return $config
         ],
         'not_operator_with_successor_space' => true,
         'blank_line_after_namespace' => true,
-        'final_class' => false,
+        'final_class' => true,
         'date_time_immutable' => true,
         'declare_parentheses' => true,
-        'final_public_method_for_abstract_class' => false,
+        'final_public_method_for_abstract_class' => true,
         'mb_str_functions' => true,
         'simplified_if_return' => true,
         'simplified_null_return' => true,

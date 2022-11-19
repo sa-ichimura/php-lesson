@@ -1,4 +1,4 @@
-# ソーシャルログイン機能をFactory Methodパターンで実装
+# ソーシャルログイン機能をFactoryMethod Methodパターンで実装
 
 ### Class図
 ```mermaid

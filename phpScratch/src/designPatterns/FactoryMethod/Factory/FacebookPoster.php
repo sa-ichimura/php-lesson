@@ -1,8 +1,9 @@
 <?php
+namespace App\FactoryMethod\Factory;
 
-namespace App\Factory;
-
-use App\Connector\SocialNetworkConnector;
+use App\FactoryMethod\Connector\FacebookConnector;
+use App\FactoryMethod\Connector\SocialNetworkConnector;
+use App\FactoryMethod\Factory\SocialNetworkPoster;
 
 class FacebookPoster extends SocialNetworkPoster {
     private string $login;
@@ -16,7 +17,7 @@ class FacebookPoster extends SocialNetworkPoster {
 
     public function getSocialNetwork(): SocialNetworkConnector
     {
-        return new SocialNetworkConnector($this->login,$this->password);
+        return new FacebookConnector($this->login,$this->password);
     }
 }
 

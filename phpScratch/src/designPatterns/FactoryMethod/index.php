@@ -1,8 +1,10 @@
 <?php
 
-namespace App;
-
-use App\Factory\{FacebookPoster, LinkedInPoster, SocialNetworkPoster};
+declare(strict_types=1);
+require('/var/www/app/vendor/autoload.php');
+use App\FactoryMethod\Factory\FacebookPoster;
+use App\FactoryMethod\Factory\LinkedInPoster;
+use App\FactoryMethod\Factory\SocialNetworkPoster;
 
 function clientCode(SocialNetworkPoster $creator)
 {
