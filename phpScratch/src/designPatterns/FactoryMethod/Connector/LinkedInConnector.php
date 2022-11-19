@@ -1,7 +1,9 @@
 <?php
+
+declare(strict_types=1);
 namespace App\FactoryMethod\Connector;
 
-class LinkedInConnector implements SocialNetworkConnector {
+final class LinkedInConnector implements SocialNetworkConnector {
     private string $email;
     private string $password;
 

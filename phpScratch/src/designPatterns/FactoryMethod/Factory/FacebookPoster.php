@@ -1,11 +1,12 @@
 <?php
+
+declare(strict_types=1);
 namespace App\FactoryMethod\Factory;
 
 use App\FactoryMethod\Connector\FacebookConnector;
 use App\FactoryMethod\Connector\SocialNetworkConnector;
-use App\FactoryMethod\Factory\SocialNetworkPoster;
 
-class FacebookPoster extends SocialNetworkPoster {
+final class FacebookPoster extends SocialNetworkPoster {
     private string $login;
     private string $password;
 

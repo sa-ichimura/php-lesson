@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\FactoryMethod\Factory;
 
 use App\FactoryMethod\Connector\LinkedInConnector;
 use App\FactoryMethod\Connector\SocialNetworkConnector;
 
-class LinkedInPoster extends SocialNetworkPoster
+final class LinkedInPoster extends SocialNetworkPoster
 {
     private $email, $password;
 

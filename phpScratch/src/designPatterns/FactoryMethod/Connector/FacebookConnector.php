@@ -1,7 +1,8 @@
 <?php
+
 namespace App\FactoryMethod\Connector;
 
-class FacebookConnector implements SocialNetworkConnector {
+final class FacebookConnector implements SocialNetworkConnector {
     private string $login;
     private string $password;
 

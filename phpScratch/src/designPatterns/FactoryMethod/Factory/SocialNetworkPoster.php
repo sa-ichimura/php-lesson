@@ -1,4 +1,6 @@
 <?php
+
+declare(strict_types=1);
 namespace App\FactoryMethod\Factory;
 
 use App\FactoryMethod\Connector\SocialNetworkConnector;
@@ -6,7 +8,7 @@ use App\FactoryMethod\Connector\SocialNetworkConnector;
 abstract class SocialNetworkPoster {
     abstract public function getSocialNetwork(): SocialNetworkConnector;
 
-    public function post($content):void
+    final public function post($content):void
     {
         // Call the factory method to create a Product object...
         $network = $this->getSocialNetwork();
