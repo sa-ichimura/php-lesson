@@ -1,0 +1,32 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:1.21.6-alpine
+    ports:
+      - 8080:80
+    volumes:
+      - ./Docker/nginx/:/etc/nginx/conf.d/
+      - ./src:/var/www/app
+    depends_on:
+      - php
+  php:
+    build: ./Docker/php
+    volumes:
+      - ./src:/var/www/app
+    depends_on:
+      - db
+    working_dir: /var/www/app
+  cs:
+    image: herloct/php-cs-fixer
+    volumes:
+      - ./src:/var/www/app
+  db:
+    image: mysql:5.7
+    ports:
+      - 13306:3306
+    volumes:
+      - mysql-store:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+volumes:
+  mysql-store:
