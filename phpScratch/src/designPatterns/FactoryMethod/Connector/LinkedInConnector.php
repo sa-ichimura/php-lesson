@@ -20,7 +20,7 @@ final class LinkedInConnector implements SocialNetworkConnector {
 
     public function logOut(): void
     {
-        echo "send Linked Logout API request \n user:$this->user\n";
+        echo "send Linked Logout API request \n user:$this->email\n";
     }
 
     public function createPost(): void

@@ -9,7 +9,8 @@ use App\FactoryMethod\Connector\SocialNetworkConnector;
 
 final class LinkedInPoster extends SocialNetworkPoster
 {
-    private $email, $password;
+    private string $email;
+    private string $password;
 
     public function __construct(string $email, string $password)
     {
