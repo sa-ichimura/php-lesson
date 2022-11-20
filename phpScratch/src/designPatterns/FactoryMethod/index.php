@@ -6,7 +6,7 @@ use App\FactoryMethod\Factory\FacebookPoster;
 use App\FactoryMethod\Factory\LinkedInPoster;
 use App\FactoryMethod\Factory\SocialNetworkPoster;
 
-function clientCode(SocialNetworkPoster $creator)
+function clientCode(SocialNetworkPoster $creator):void
 {
     // ...
     $creator->post("Hello world!");

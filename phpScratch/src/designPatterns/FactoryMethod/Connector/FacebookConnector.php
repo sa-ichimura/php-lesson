@@ -21,11 +21,11 @@ final class FacebookConnector implements SocialNetworkConnector {
 
     public function logOut(): void
     {
-        echo "send Facebook Logout API request \n user:$this->user\n";
+        echo "send Facebook Logout API request \n user:$this->login\n";
     }
 
     public function createPost(): void
     {
-        echo "send Facebook create post API request \n user:$this->user\n $this->password\n";
+        echo "send Facebook create post API request \n user:$this->login\n $this->password\n";
     }
 }
