@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 final class GiftPoint
 {
-    private static const MIN_POINT = 0;
-    private static const STANDARD_MEMBER_POINT = 3000;
-    private static const PREMIUMN_MEMBER_POINT = 10000;
+    private const MIN_POINT = 0;
+    private const STANDARD_MEMBER_POINT = 3000;
+    private const PREMIUMN_MEMBER_POINT = 10000;
     public int $value;
 
     /**

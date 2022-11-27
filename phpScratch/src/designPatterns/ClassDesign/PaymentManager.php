@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 final class PaymentManager{
-    private int $discounRate; //割引率
+    // private int $discounRate; //割引率
 
     /**
      * staticがついていないが、static methodと同じ問題があるメソッド
