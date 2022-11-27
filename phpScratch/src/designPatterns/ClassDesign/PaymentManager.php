@@ -1,5 +1,7 @@
 <?php
-class PaymentManager{
+
+declare(strict_types=1);
+final class PaymentManager{
     private int $discounRate; //割引率
 
     /**

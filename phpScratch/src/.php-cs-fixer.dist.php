@@ -51,15 +51,15 @@ return $config
         'simplified_if_return' => true,
         'simplified_null_return' => true,
         'blank_line_before_statement' => [
-        'statements' => [
-            'break',
-            'continue',
-            'declare',
-            'return',
-            'throw',
-            'try'
+            'statements' => [
+                'break',
+                'continue',
+                'declare',
+                'return',
+                'throw',
+                'try'
+            ],
         ],
-    ],
 
     ])
     ->setFinder($finder);
